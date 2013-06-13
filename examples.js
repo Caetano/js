@@ -16,5 +16,10 @@ $(document).ready(function () {
         $.post(url, { array : array });
         });
     });
+    
+    //Get element by name
+    $("button[name=someName]").click(function () {
+        alert($(this).attr('name'));        
+    });
 
 });
